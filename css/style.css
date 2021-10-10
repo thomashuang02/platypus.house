@@ -41,12 +41,15 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
         text-shadow: 0 0 10px #ff00ae;
     }
 }
+/* end pulse effect */
 /* iframe container */
 .iframe-container {
     overflow: hidden;
     /* 16:9 aspect ratio */
     padding-top: 56.25%;
     position: relative;
+    border-radius: 10px; 
+    overflow: hidden;
 }
 .iframe-container iframe {
     height: 100%;
@@ -63,14 +66,41 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
     flex: 1; /* additionally, equal width */
 }
 /* end flexbox */
-/* end pulse effect */
+/* table for buttons */
+.buttons {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.buttons button {
+    width: 100%;
+    border-radius: 5px; 
+    overflow: hidden;
+}
+tr {
+    display:flex;
+    flex-wrap:wrap; /* allow to wrap on multiple rows */
+}
+td {
+    display:block;
+    flex:1; /* to evenly distributs flex elements */
+    padding: 3px;
+}
+body {font-size:16px;}
+.half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.half img:hover{opacity:1}
+img.logo {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .serif{font-family:serif}.sans-serif{font-family:sans-serif}.cursive{font-family:cursive}.monospace{font-family:monospace}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #52d1b3;margin:20px 0;color:#52d1b3!important}
 .image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
-.table,.table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.table-all{border:1px solid #ccc}
+.table,.table-all{border-collapse:collapse;width:100%;display:table}.table-all{border:1px solid #ccc}
 .bordered tr,.table-all tr{border-bottom:1px solid #ddd}.striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}
 .hoverable tbody tr:hover,.ul.hoverable li:hover{background-color:#ccc}.centered tr th,.centered tr td{text-align:center}
