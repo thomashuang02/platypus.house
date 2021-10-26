@@ -100,7 +100,7 @@ img.logo {
     transition-timing-function: cubic-bezier(0, 0, 0.58, 1.0);
 }
 .socialButton:hover {
-    background-color: #52d1b3 !important;
+    background-color: #6cebcd !important;
 }
 .sendMessageButton:hover {
     background-color:#74f8d9 !important;
