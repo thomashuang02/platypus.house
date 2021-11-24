@@ -331,3 +331,15 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 .border-dark-grey,.hover-border-dark-grey:hover,.border-dark-gray,.hover-border-dark-gray:hover{border-color:#616161!important}
 .border-pale-red,.hover-border-pale-red:hover{border-color:#ffe7e7!important}.border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
+.max-width {
+    max-width: 1200px;
+}
+.round-bottom {
+    border-radius: 0 0 30px 30px;
+}
+.shadow {
+    box-shadow: 3px 3px 5px gainsboro;
+}
+a {
+    padding: 0;
+}
