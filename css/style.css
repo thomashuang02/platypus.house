@@ -508,6 +508,7 @@ a {
 
 a {
     color: var(--text-color);
+    transition: color 0.3s;
 }
 #close-sidebar:hover {
     color: black;
