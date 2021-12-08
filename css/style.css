@@ -187,10 +187,10 @@ img{vertical-align:middle}
 .sidebar-spacer {
     width: 250px;
 }
-.sidebar-spacer, .main-content {
+.sidebar-spacer, #main-content {
     float: left
 }
-.main-content {
+#main-content {
     flex: 1;
     max-width: 1500px;
     margin-left: auto;
@@ -345,9 +345,12 @@ a {
     color: black;
     background-color: #a1f1df;
 }
-#logo-and-title {
+#logo-and-title-link {
     color: white;
     text-decoration: none;
+}
+#logo-and-title {
+    margin-top: 32px;
 }
 
 .gray-text {
@@ -370,7 +373,7 @@ a {
     transition: filter 0.2s;
 }
 .music-entry:hover > img {
-    filter: blur(3px) brightness(0.4);
+    filter: blur(2px) brightness(0.4);
 }
 
 .music-label {
@@ -395,7 +398,7 @@ a {
 }
 
 #contact {
-    margin: 50px auto 70px auto;
+    margin: 40px auto 70px auto;
 }
 #about {
     margin-top: 40px;
@@ -432,6 +435,9 @@ a {
 }
 #music {
     margin-top:60px;
+}
+#canvas {
+    margin-top:50px;
 }
 #contact-form input {
     border-radius: 3px; overflow: hidden;
