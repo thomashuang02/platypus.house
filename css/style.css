@@ -29,6 +29,22 @@ textarea{overflow:auto}
         text-shadow: 0 0 10px #ff00ae;
     }
 }
+.pulsing-skyblue {
+    animation: glow-skyblue 1s infinite alternate;
+}
+@keyframes glow-skyblue {
+    to {
+        text-shadow: 0 0 10px #12c0f2;
+    }
+}
+.pulsing-red {
+    animation: glow-red 1s infinite alternate;
+}
+@keyframes glow-red {
+    to {
+        text-shadow: 0 0 10px red;
+    }
+}
 /* end pulse effect */
 
 /* flexbox for side-by-side divs maintaining same height */
@@ -132,7 +148,7 @@ img{vertical-align:middle}
 .overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
 .display-topleft{position:absolute;left:0;top:0}
 .round,.round-medium{border-radius:4px}
-.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col{padding:0 8px}
+.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col{margin:0 8px}
 .container{padding:0.01em 16px}
 .code,.codespan{font-family:Consolas,"courier new";font-size:16px}
 .code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
@@ -184,6 +200,9 @@ img{vertical-align:middle}
     z-index:3;
     width:250px;
     font-weight:bold;
+}
+#myOverlay {
+    cursor:pointer;
 }
 .logo {
     display:block;
@@ -317,8 +336,14 @@ html {
 a {
     color: var(--text-color);
 }
+#close-sidebar {
+    width:100%;
+    font-size:18px;
+    transition: background-color 0.3s;
+}
 #close-sidebar:hover {
     color: black;
+    background-color: #a1f1df;
 }
 #logo-and-title {
     color: white;
@@ -342,21 +367,23 @@ a {
     cursor: pointer;
 }
 .music-entry > img {
-    transition: filter 0.3s;
+    transition: filter 0.2s;
 }
 .music-entry:hover > img {
-    filter: blur(2px) brightness(0.4);
+    filter: blur(3px) brightness(0.4);
 }
 
 .music-label {
+    font-size: 15px;
     color: white !important;
     text-align: center;
+
     width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 16px;
+
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s ease-out, opacity 0.3s;
@@ -365,4 +392,53 @@ a {
 .music-entry:hover > .music-label {
     visibility: visible;
     opacity: 1;
+}
+
+#contact {
+    margin: 50px auto 70px auto;
+}
+#about {
+    margin-top: 40px;
+}
+#socials {
+    margin-top: 15px;
+}
+.fa-linkedin {
+    color:#0e76a8;
+}
+.fa-github {
+    color:#211F1F;
+}
+.fa-youtube-play {
+    color:#c4302b;
+}
+.fa-envelope {
+    color:#000000;
+}
+.fa-file-text {
+    color:#000000;
+}
+#projects {
+    margin-top:70px;
+}
+.project-pic {
+    width: 100%;
+}
+.ig-link {
+    white-space:nowrap;
+}
+.ig-logo {
+    font-size:16px;color:#bc2a8d;
+}
+#music {
+    margin-top:60px;
+}
+#contact-form input {
+    border-radius: 3px; overflow: hidden;
+}
+#contact-form textarea {
+    border-radius: 3px; resize: vertical;
+}
+#powered-by {
+    margin-top:60px;padding-right:58px;
 }
