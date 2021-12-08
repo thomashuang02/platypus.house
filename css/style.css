@@ -339,7 +339,7 @@ a {
 #close-sidebar {
     width:100%;
     font-size:18px;
-    transition: background-color 0.3s;
+    transition: background-color 0.1s;
 }
 #close-sidebar:hover {
     color: black;
@@ -441,4 +441,8 @@ a {
 }
 #powered-by {
     margin-top:60px;padding-right:58px;
+}
+.section-header {
+    text-decoration: none;
+    color: #52d1b3;
 }
