@@ -37,10 +37,11 @@ window.onload = () => {
   clearCanvas.addEventListener('click', e => {
     context.fillRect(0, 0, canvas.width, canvas.height);
   }, false);
-  //post canvas
-  const postCanvas = document.getElementById('save-canvas');
-  postCanvas.addEventListener('click', e => {
-    alert('not yet implemented :)');
+  //save canvas
+  const saveCanvas = document.getElementById('save-canvas');
+  saveCanvas.setAttribute('download', 'platypus-house-canvas.png');
+  saveCanvas.addEventListener('click', e => {
+    saveCanvas.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
   }, false);
 
   // initial canvas sizing and config
