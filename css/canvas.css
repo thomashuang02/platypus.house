@@ -6,6 +6,33 @@
     display: block;
     width: 100%;
 }
+.idle {
+    cursor: url(../images/cursors/jirachi_1.png), default;
+    -webkit-animation: cursorDefault 350ms infinite;
+    animation: cursorDefault 350ms infinite;
+}
+@-webkit-keyframes cursorDefault {
+  0% {cursor: url(../images/cursors/jirachi_1.png), default;}
+  50% {cursor: url(../images/cursors/jirachi_2.png), default;}
+} 
+@keyframes cursorDefault {
+  0% {cursor: url(../images/cursors/jirachi_1.png), default;}
+  50% {cursor: url(../images/cursors/jirachi_2.png), default;}
+}
+.drawing {
+    cursor: url(../images/cursors/jirachi_s_1.png), pointer;
+    -webkit-animation: cursorPointer 350ms infinite;
+    animation: cursorPointer 350ms infinite;
+}
+@-webkit-keyframes cursorPointer {
+    0% {cursor: url(../images/cursors/jirachi_s_1.png), pointer;}
+    50% {cursor: url(../images/cursors/jirachi_s_2.png), pointer;}
+} 
+@keyframes cursorPointer {
+    0% {cursor: url(../images/cursors/jirachi_s_1.png), pointer;}
+    50% {cursor: url(../images/cursors/jirachi_s_2.png), pointer;}
+}
+
 #canvas-warning {
     color: gray;
 }

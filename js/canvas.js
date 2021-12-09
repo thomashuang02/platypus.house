@@ -62,6 +62,8 @@ const findPosition = e => {
 }
 
 const handleMouseDown = e => {
+  canvas.classList.remove('idle');
+  canvas.classList.add('drawing');
   isDrawing = true;
   [x, y] = findPosition(e);
   context.moveTo(x, y);
@@ -83,5 +85,7 @@ const handleMouseMove = e => {
 };
 
 const handleMouseUp = e => {
+  canvas.classList.remove('drawing');
+  canvas.classList.add('idle');
   isDrawing = false;
 };
