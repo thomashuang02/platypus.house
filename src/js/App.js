@@ -29,7 +29,7 @@ const themeToggle = () => {
 const setSmoothScrolling = () => {
   // Define selector for selecting
   // anchor links with the hash
-  let anchorSelector = 'a[href^="#"], a:not(#save-canvas)';
+  let anchorSelector = 'a[href^="#"]:not(#save-canvas)';
   // Collect all such anchor links
   let anchorList = document.querySelectorAll(anchorSelector);
   // Iterate through each of the links
