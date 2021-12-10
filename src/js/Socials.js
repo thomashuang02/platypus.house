@@ -32,7 +32,7 @@ const Socials = props => {
                 <SocialComponent 
                     name="Resume"
                     faClass="fa-file-text"
-                    link="https://docs.google.com/viewer?url=https://thomashuang02.github.io/media/Thomas_Huang_Resume.pdf"
+                    link="https://docs.google.com/viewer?url=https://platypus.house/media/Thomas_Huang_Resume.pdf"
                 />
               </tr>
             </tbody>
