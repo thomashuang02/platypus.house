@@ -55,7 +55,7 @@ const Projects = props => {
                 imageURL="./images/patapuspfp.png"
                 name="personal website"
                 date="last updated December 9, 2021"
-                githubLink="https://github.com/thomashuang02/thomashuang02.github.io"
+                githubLink="https://github.com/thomashuang02/website"
             >
                 <p>
                     Pushing my previously-zero front-end limits. 
