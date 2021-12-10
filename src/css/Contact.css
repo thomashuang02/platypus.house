@@ -1,0 +1,17 @@
+#contact {
+    margin: 40px auto 70px auto;
+}
+#contact-form input {
+    border-radius: 3px; overflow: hidden;
+}
+#contact-form textarea {
+    border-radius: 3px; resize: vertical;
+}
+#contact input, #contact textarea {
+    background: transparent;
+    color: var(--text-color);
+}
+.sendMessageButton:hover {
+    background-color:#74f8d9 !important;
+    color: black !important;
+}
