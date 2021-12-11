@@ -15,7 +15,7 @@ const canvasConfig = () => {
     const reconfigureCanvas = () => {
         context.canvas.width = canvas.clientWidth;
         context.canvas.height = canvas.clientWidth * 0.6;
-        context.fillStyle = 'white';
+        context.fillStyle = "#FFFFFF";
         context.fillRect(0, 0, canvas.width, canvas.height);
         context.strokeStyle = document.getElementById('color-change').value;
         context.lineJoin = 'round';
@@ -26,9 +26,24 @@ const canvasConfig = () => {
         /* tools */
         //color change
         const changeColor = document.getElementById('color-change');
+        const eraser = document.getElementById('eraser');
         changeColor.addEventListener('change', (e) => {
             const newColor = e.target.value;
+            //deactivate eraser if erasing
+            if(eraser.checked) {
+                eraser.click();
+            }
             context.strokeStyle = newColor;
+        }, false);
+        //eraser
+        eraser.addEventListener('change', (e) => {
+            const erasing = e.target.checked;
+            if(erasing) {
+                context.strokeStyle = "#FFFFFF";
+            }
+            else {
+                context.strokeStyle = changeColor.value;
+            }
         }, false);
         //thickness change
         const thicknessSlider = document.getElementById('thickness');
@@ -101,8 +116,12 @@ const Canvas = props => {
         canvasConfig();
     }, []);
 
-    const [color, setColor] = useState('black');
+    const [color, setColor] = useState('#000000');
     const [thickness, setThickness] = useState(4);
+    const [erasing, setErasing] = useState(false);
+    const toggleErasing = () => {
+        setErasing(!erasing);
+    }
 
     return (
         <div className="container" id="canvas">
@@ -120,6 +139,10 @@ const Canvas = props => {
                 <input type="color" id="color-change" value={color} onChange={(e)=>setColor(e.target.value)}/>
                 <label htmlFor="thickness"> thickness: </label>
                 <input className="slider" type="range" id="thickness" value={thickness} onChange={(e)=>setThickness(e.target.value)} min="1" max="40" step="1"/>
+                <label className="checkbox-container">
+                    <input id="eraser" type="checkbox" value={erasing} />
+                    <span className="checkmark" onClick={()=>toggleErasing()}></span>
+                </label>
                 <button id="clear-canvas" className="canvas-button">clear</button>
             </div>
             <a href="/#" id="save-canvas" className="patapusteal">save</a>
