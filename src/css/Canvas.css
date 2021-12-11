@@ -90,7 +90,7 @@
 
 /* line width slider */
 #thickness {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .slider {
     -webkit-appearance: none;
@@ -152,10 +152,11 @@
     top: -5;
     left: 0;
     height: 25px;
-    width: 45px;
+    width: 55px;
     border-radius: 3px;
     background-color: #f89f9b;
     box-shadow: 2px 2px 0px 2px #af5450;
+    text-align: center;
 }
 .checkbox-container input ~ .checkmark {
     transition: background-color 0.2s;
@@ -171,11 +172,16 @@
     position: absolute;
     display: none;
 }
+.checkbox-container input:not(:checked) ~ .checkmark::before {
+    position: relative;
+    top: 1px;
+    content: "erase";
+}
 .checkbox-container input:checked ~ .checkmark:after {
     display: block;
 }
 .checkbox-container .checkmark:after {
-    left: 18.5px;
+    left: 23px;
     top: 3.5px;
     width: 8px;
     height: 15px;
