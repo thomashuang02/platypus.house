@@ -131,7 +131,10 @@ const Canvas = props => {
             <hr className="round divider"/>
             <p>
                 draw and save your "masterpiece."<br/>
-                <span id='canvas-warning'>careful: resizing the page will reset your canvas!</span>
+                <span id='canvas-warning'>
+                    no mobile support yet, sorry :(<br/>
+                    careful: resizing the page will reset your canvas!
+                </span>
             </p>
             <canvas id="canvas-tool" className='idle'></canvas>
             <div id="tools">

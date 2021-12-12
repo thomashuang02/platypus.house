@@ -1,9 +1,46 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SectionHeader from './SectionHeader';
 import ProjectComponent from './ProjectComponent';
 import '../css/Projects.css';
+import axios from 'axios';
 
 const Projects = props => {
+    const monthMap = {
+        0: "January",
+        1: "February",
+        2: "March",
+        3: "April",
+        4: "May",
+        5: "June",
+        6: "July",
+        7: "August",
+        8: "September",
+        9: "October",
+        10: "November",
+        11: "December"
+    }
+    const formatDate = (rawDate) => {
+        const dateObj = new Date(rawDate);
+        const month = monthMap[dateObj.getMonth()];
+        const date = dateObj.getDate();
+        const year = dateObj.getFullYear();
+        return `${month} ${date}, ${year}`;
+    }
+    const [lastUpdated, setLastUpdated] = useState("December 12, 2021");
+    const getModifiedDate = async () => {
+        try {
+            const res = await axios.get("https://api.github.com/repos/thomashuang02/website/branches/gh-pages");
+            const rawDate = res.data.commit.commit.committer.date;
+            setLastUpdated(formatDate(rawDate));
+        }
+        catch(e) {
+            setLastUpdated("December 12, 2021");
+        }
+    }
+    useEffect(() => {
+        getModifiedDate();
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
     return (
         <>
         <div className="container" id="projects">
@@ -54,7 +91,7 @@ const Projects = props => {
             <ProjectComponent 
                 imageURL="./images/patapuspfp.png"
                 name="personal website"
-                date="last updated December 9, 2021"
+                date={`last updated ${lastUpdated}`}
                 githubLink="https://github.com/thomashuang02/website"
             >
                 <p>
