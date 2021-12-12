@@ -139,9 +139,9 @@ const Canvas = props => {
                 <input type="color" id="color-change" value={color} onChange={(e)=>setColor(e.target.value)}/>
                 <label htmlFor="thickness"> thickness: </label>
                 <input className="slider" type="range" id="thickness" value={thickness} onChange={(e)=>setThickness(e.target.value)} min="1" max="40" step="1"/>
-                <label className="checkbox-container">
+                <label className="eraser-checkbox-container">
                     <input id="eraser" type="checkbox" value={erasing} />
-                    <span className="checkmark" onClick={()=>toggleErasing()}></span>
+                    <span className="eraser-checkmark" onClick={()=>toggleErasing()}></span>
                 </label>
                 <button id="clear-canvas" className="canvas-button">clear</button>
             </div>

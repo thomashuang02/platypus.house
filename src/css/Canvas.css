@@ -131,9 +131,9 @@
     background: #74f8d9;
 }
 
-/* custom checkbox */
+/* custom eraser-checkbox */
 /* Customize the label (the container) */
-.checkbox-container {
+.eraser-checkbox-container {
     display: block;
     position: relative;
     cursor: pointer;
@@ -142,12 +142,12 @@
     -ms-user-select: none;
     user-select: none;
 }
-/* Hide the browser's default checkbox */
-.checkbox-container input {
+/* Hide the browser's default eraser-checkbox */
+.eraser-checkbox-container input {
     opacity: 0;
 }
-/* Create a custom checkbox */
-.checkmark {
+/* Create a custom eraser-checkbox */
+.eraser-checkmark {
     position: absolute;
     top: -5;
     left: 0;
@@ -158,29 +158,29 @@
     box-shadow: 2px 2px 0px 2px #af5450;
     text-align: center;
 }
-.checkbox-container input ~ .checkmark {
+.eraser-checkbox-container input ~ .eraser-checkmark {
     transition: background-color 0.2s;
 }
-.checkbox-container:hover input ~ .checkmark {
+.eraser-checkbox-container:hover input ~ .eraser-checkmark {
     background-color: #fcb5b1 !important;
 }
-.checkbox-container input:checked ~ .checkmark {
+.eraser-checkbox-container input:checked ~ .eraser-checkmark {
     background-color: #f89f9b;
 }
-.checkmark:after {
+.eraser-checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
-.checkbox-container input:not(:checked) ~ .checkmark::before {
+.eraser-checkbox-container input:not(:checked) ~ .eraser-checkmark::before {
     position: relative;
     top: 1px;
     content: "erase";
 }
-.checkbox-container input:checked ~ .checkmark:after {
+.eraser-checkbox-container input:checked ~ .eraser-checkmark:after {
     display: block;
 }
-.checkbox-container .checkmark:after {
+.eraser-checkbox-container .eraser-checkmark:after {
     left: 23px;
     top: 3.5px;
     width: 8px;
