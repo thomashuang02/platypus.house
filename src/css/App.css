@@ -60,7 +60,6 @@ img.logo {
 }
 a {
     border-radius: 2px;
-    transition: color 0.3s;
 }
 
 /*button color transition */
@@ -122,9 +121,9 @@ img{vertical-align:middle}
 .padding-top-32{padding-top:32px!important}.padding-top-24{padding-top:24px!important}
 .padding-top-80{padding-top:80px!important}
 /* Colors */
-.pink,.hover-pink:hover{color:#fff!important;background-color:#e246b1!important}
-.red,.hover-red:hover{color:#fff!important;background-color:#ff0000!important}
-.teal,.hover-teal:hover{color:#fff!important;background-color:#26bb98!important}
+.pink,.hover-pink:hover{color:#fff!important;background-color:#ec55bc!important}
+.red,.hover-red:hover{color:#fff!important;background-color:#fc2020!important}
+.teal,.hover-teal:hover{color:#fff!important;background-color:#2dcfa9!important}
 .skyblue,.hover-skyblue:hover{color:#fff!important;background-color:#12c0f2!important}
 .patapusteal,.hover-patapusteal:hover{color:#fff!important;background-color:#52d1b3!important}
 .light-grey,.hover-light-grey:hover,.light-gray,.hover-light-gray:hover{background-color:transparent!important}

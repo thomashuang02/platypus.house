@@ -176,7 +176,9 @@
     position: relative;
     top: 1px;
     content: "erase";
+    color: white;
 }
+
 .eraser-checkbox-container input:checked ~ .eraser-checkmark:after {
     display: block;
 }
