@@ -66,6 +66,7 @@
 
 #color-change {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 #clear-canvas {

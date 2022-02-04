@@ -22,9 +22,10 @@
 .socialButton {
     font-size: 16px;
     background-color: #b6b6b660 !important;
-    transition: background-color 0.2s ease;
+    transition: 0.2s ease;
     height: 50px;
 }
 .socialButton:hover {
     background-color: #b6b6b696 !important;
+    transform: scale(103%);
 }

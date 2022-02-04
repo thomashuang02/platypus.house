@@ -16,14 +16,14 @@ const openSidebar = () => {
   document.getElementById("my-overlay").style.display = "block";
 }
 const themeSet = (toggled) => {
-  document.getElementById('style-light').disabled = toggled;
-  document.getElementById('style-dark').disabled = !toggled;
+  document.getElementById('style-light').disabled = !toggled;
+  document.getElementById('style-dark').disabled = toggled;
   localStorage.setItem('theme-toggled', toggled ? '1' : '');
   document.getElementById('mode').innerHTML = toggled ? '阳' : '阴';
 }
 const themeToggle = () => {
   console.log("HERE");
-  themeSet(!document.getElementById('style-light').disabled);
+  themeSet(document.getElementById('style-light').disabled);
 }
 
 const setSmoothScrolling = () => {

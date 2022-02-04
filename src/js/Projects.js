@@ -3,6 +3,7 @@ import SectionHeader from './SectionHeader';
 import ProjectComponent from './ProjectComponent';
 import '../css/Projects.css';
 import axios from 'axios';
+import wishAnimation from '../videos/multi_5-star_wish.mp4';
 
 const Projects = props => {
     const monthMap = {
@@ -55,6 +56,21 @@ const Projects = props => {
         {/*row 1*/}
         <div className="row-padding row">
             <ProjectComponent 
+                videoSrc={wishAnimation}
+                name="gachasim"
+                date="Ongoing"
+                githubLink="https://github.com/thomashuang02/gachasim"
+            >
+                <p>
+                    A gacha simulator for (eventually) various popular gacha games; all the dopamine without any of the 
+                    grinding or whaling.
+                </p>
+                <p>
+                    Currently focused on a more-or-less one-to-one recreation of the Genshin Impact wish
+                    system.
+                </p>
+            </ProjectComponent>
+            <ProjectComponent 
                 imageURL="./images/projects/all-in-poker.png"
                 name="All-In Poker"
                 date="December 2021"
@@ -88,6 +104,9 @@ const Projects = props => {
                     Includes various sorting and filtering functionalities.
                 </p>
             </ProjectComponent>
+        </div>
+        {/*row 2*/}
+        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/patapuspfp.png"
                 name="personal website"
@@ -105,9 +124,6 @@ const Projects = props => {
                     </span>
                 </p>
             </ProjectComponent>
-        </div>
-        {/*row 2*/}
-        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/projects/dataprophet-detect.png"
                 name="time-series anomaly detection"
@@ -131,6 +147,9 @@ const Projects = props => {
                     a given country would reach a percentage threshold for people vaccinated.
                 </p>
             </ProjectComponent>
+        </div>
+        {/*row 3*/}
+        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/projects/moon-and-stars.png"
                 name="♫ TO THE STARS"
@@ -149,9 +168,6 @@ const Projects = props => {
                     </span>
                 </p>
             </ProjectComponent>
-        </div>
-        {/*row 3*/}
-        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/projects/course-registration.jpg"
                 name="university course registration system"
@@ -164,7 +180,6 @@ const Projects = props => {
                     Supports serialization to save and reload data.
                 </p> 
             </ProjectComponent>
-            <ProjectComponent filler={true}/>
             <ProjectComponent filler={true}/>
         </div>
         </>

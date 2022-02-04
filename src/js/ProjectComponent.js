@@ -8,7 +8,14 @@ const ProjectComponent = props => {
         return (
         <div className="col m4 margin-bottom">
             <div className="light-grey round-bottom project-container">
-                <img className="project-pic" src={props.imageURL} alt={props.name}/>
+                { props.imageURL ? <img className="project-pic" src={props.imageURL} alt={props.name}/> : null }
+                { props.videoSrc ? 
+                    <div className='project-video-container'>
+                        <video autoPlay muted loop id='wish-animation'>
+                            <source src={props.videoSrc} type='video/mp4' />
+                        </video>
+                    </div>
+                     : null }
                 <div className="container">
                     <h3>{props.name}</h3>
                     <p className="gray-text">

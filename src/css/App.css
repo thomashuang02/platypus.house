@@ -199,10 +199,10 @@ body {font-family: "Poppins", sans-serif}
 html {
     background-color: var(--background-color) !important;
     color: var(--text-color) !important;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.2s, color 0.2s;
 }
 .hover-no-underline:hover {
-    text-decoration: none;
+    text-decoration: underline solid transparent;
 }
 
 .hover-light-teal:hover{
@@ -214,6 +214,8 @@ html {
 }
 a {
     color: var(--text-color);
+    transition: 0.2s;
+    text-decoration: underline solid var(--text-color);
 }
 #close-sidebar {
     width:100%;
@@ -237,6 +239,12 @@ a {
 .section-header {
     text-decoration: none;
     color: #52d1b3;
+    transition: 0.3s;
+    display: inline-block;
+}
+.section-header:hover {
+    transform: scale(110%);
+    animation: glow-teal 1s infinite alternate;
 }
 
 /* pulse effect */
@@ -284,7 +292,7 @@ a {
     border-radius: 100px;
     color: var(--text-color);
     background-color: var(--background-color);
-    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
     text-align: center;
 }
 #mode {
