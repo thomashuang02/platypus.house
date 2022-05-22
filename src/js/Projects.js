@@ -47,18 +47,30 @@ const Projects = props => {
         <div className="container" id="projects">
             <SectionHeader name="projects" />
             <p>
-                learning by doing, an endlessly{' '}
-                <strike>frustrating</strike>{' '}
-                fulfilling journey.
+                learning by doing.
             </p>
         </div>
 
         {/*row 1*/}
         <div className="row-padding row">
             <ProjectComponent 
+                imageURL="./images/projects/movie-genre-classification.png"
+                name="classifying movie genres using summaries"
+                date="May 2022"
+                githubLink="https://github.com/thomashuang02/nlp-movie-genre-classification"
+            >
+                <p>
+                    NLP team project with <a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/CozyHome" target='_blank' rel="noreferrer">Daniel Cucuzza</a> and <a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/zer0key123" target='_blank' rel="noreferrer">Illia Borzov</a>.
+                </p>
+                <p>
+                    I built and refined our engineering pipeline, and was also heavily involved in research, evaluation, and documentation. 
+                    Code and paper with findings on Github.
+                </p>
+            </ProjectComponent>
+            <ProjectComponent 
                 videoSrc={wishAnimation}
                 name="gachasim"
-                date="Ongoing"
+                date="On Hold"
                 githubLink="https://github.com/thomashuang02/gachasim"
             >
                 <p>
@@ -66,8 +78,7 @@ const Projects = props => {
                     grinding or whaling.
                 </p>
                 <p>
-                    Currently focused on a more-or-less one-to-one recreation of the Genshin Impact wish
-                    system.
+                    Good headway on one-to-one recreation of the Genshin Impact wish menu, lacking only rolling logic and wish summary displays. Project on hold as my interest in the game has waned.
                 </p>
             </ProjectComponent>
             <ProjectComponent 
@@ -91,6 +102,9 @@ const Projects = props => {
                     {' '}<a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/owen-boop" target='_blank' rel="noreferrer">Owen Wahlgren</a>.
                 </p>
             </ProjectComponent>
+        </div>
+        {/*row 2*/}
+        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/projects/showstop.png"
                 name="Showstop"
@@ -104,9 +118,6 @@ const Projects = props => {
                     Includes various sorting and filtering functionalities.
                 </p>
             </ProjectComponent>
-        </div>
-        {/*row 2*/}
-        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/patapuspfp.png"
                 name="personal website"
@@ -135,6 +146,9 @@ const Projects = props => {
                     attempts to reconstruct compressed time-series input to visualize and suggest potential anomalies.
                 </p>
             </ProjectComponent>
+        </div>
+        {/*row 3*/}
+        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/projects/global-vaccination.png"
                 name="forecasting covid-19 vaccination rates"
@@ -147,9 +161,6 @@ const Projects = props => {
                     a given country would reach a percentage threshold for people vaccinated.
                 </p>
             </ProjectComponent>
-        </div>
-        {/*row 3*/}
-        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/projects/moon-and-stars.png"
                 name="♫ TO THE STARS"
@@ -180,8 +191,8 @@ const Projects = props => {
                     Supports serialization to save and reload data.
                 </p> 
             </ProjectComponent>
-            <ProjectComponent filler={true}/>
         </div>
+        {/* <ProjectComponent filler={true}/> */}
         </>
     );
 }

@@ -130,10 +130,9 @@ const Canvas = props => {
             </h1>
             <hr className="round divider"/>
             <p>
-                draw and save your "masterpiece." I made this with the intent of allowing you to post it to this page, but I fear the person whose first instinct is to draw something obscene. Time and place, dude.<br/>
+                enjoy the custom Jirachi cursor!<br/>
                 <span id='canvas-warning'>
-                    no mobile support yet, sorry :(<br/>
-                    careful: resizing the page will reset your canvas!
+                    no touchscreen support yet, sorry :(<br/>
                 </span>
             </p>
             <canvas id="canvas-tool" className='idle'></canvas>

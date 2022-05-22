@@ -40,7 +40,7 @@ const Music = props => {
     {/*shitposts*/}
     <div className="container">
         <p>
-            some low-effort trashposting tunes.
+            ...and shitposts.
         </p>
     </div>
     {/*row 1*/}
