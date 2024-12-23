@@ -49,20 +49,20 @@ const Contact = props => {
         <SectionHeader name="contact" />
         <form id="contact-form" onSubmit={e=>handleSubmit(e)}>
             <div className="section">
-                <input placeholder="name" className="input border" type="text" name="Name" value={name} onChange={e=>setName(e.target.value)} required/>
+                <input placeholder="your name" className="input border" type="text" name="Name" value={name} onChange={e=>setName(e.target.value)} required/>
             </div>
             <div className="section">
-                <input placeholder="email" className="input border" type="email" name="Email" value={email} onChange={e=>setEmail(e.target.value)} required/>
+                <input placeholder="your email" className="input border" type="email" name="Email" value={email} onChange={e=>setEmail(e.target.value)} required/>
             </div>
             <div className="section">
-                <textarea placeholder="a message for me" className="input border" rows="4" name="Message" value={message} onChange={e=>setMessage(e.target.value)} required></textarea>
+                <textarea placeholder="your message" className="input border" rows="4" name="Message" value={message} onChange={e=>setMessage(e.target.value)} required></textarea>
                 </div>
             <div className="section">
                 <label className="checkbox-container">
                     <input id="contact-condition" type="checkbox" checked={mysteriousCondition} onChange={()=>togglemysteriousCondition()}/>
                     <span className="checkmark"></span>
                 </label>
-                <label className="checkbox-label" htmlFor="contact-condition">mysterious condition</label>
+                <label className="checkbox-label" htmlFor="contact-condition">check to do nothing whatsoever</label>
             </div>
             <div id="submit-button-container">
                 <button id="submit-contact" type="submit" className="sendMessageButton button block padding-large patapusteal"></button>

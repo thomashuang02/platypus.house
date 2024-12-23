@@ -29,7 +29,7 @@ const ProjectComponent = props => {
                             </> }
                         { props.githubLink &&
                             <>
-                            view on <a className="hover-teal hover-no-underline pulsing-teal" href={props.githubLink} target="_blank" rel="noreferrer">Github</a><br/>
+                            Github <a className="hover-teal hover-no-underline pulsing-teal" href={props.githubLink} target="_blank" rel="noreferrer">src</a><br/>
                             </> }
                         { props.youtubeLink &&
                             <>

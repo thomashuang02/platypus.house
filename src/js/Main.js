@@ -1,6 +1,6 @@
 import React from 'react';
 import Greeting from './Greeting';
-import Canvas from './Canvas';
+// import Canvas from './Canvas';
 import About from './About';
 import Socials from './Socials';
 import Projects from './Projects';
@@ -17,7 +17,7 @@ const Main = props => {
             <Socials />
             <Projects />
             <Music />
-            <Canvas />
+            {/* <Canvas /> */}
             <Contact />
         </div>
       </div>

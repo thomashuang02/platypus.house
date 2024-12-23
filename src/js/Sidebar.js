@@ -22,7 +22,7 @@ const Sidebar = props => {
                 <a href="#about" onClick={()=>close()} className="bar-item button hover-light-teal">about</a> 
                 <a href="#projects" onClick={()=>close()} className="bar-item button hover-light-teal">projects</a> 
                 <a href="#music" onClick={()=>close()} className="bar-item button hover-light-teal">music</a> 
-                <a href="#canvas" onClick={()=>close()} className="bar-item button hover-light-teal">canvas</a> 
+                {/* <a href="#canvas" onClick={()=>close()} className="bar-item button hover-light-teal">canvas</a>  */}
                 <a href="#contact" onClick={()=>close()} className="bar-item button hover-light-teal">contact</a>
             </div>
         </nav>

@@ -9,7 +9,7 @@ const Music = props => {
     <div className="container" id="music">
         <SectionHeader name="music" />
         <p>
-            my proudest tunes.
+            these might be listenable
         </p>
     </div>
     
@@ -40,21 +40,21 @@ const Music = props => {
     {/*shitposts*/}
     <div className="container">
         <p>
-            ...and shitposts.
+            ...and here are some shitposts
         </p>
     </div>
     {/*row 1*/}
     <div className="row-padding row">
-        <MusicComponent 
+        {/* <MusicComponent 
             name="awoo 56709"
             link="https://youtu.be/HfFSQkahN2s"
             thumbnailURL="https://img.youtube.com/vi/HfFSQkahN2s/maxresdefault.jpg"
-        />
-        <MusicComponent 
+        /> */}
+        {/* <MusicComponent 
             name="georgia"
             link="https://youtu.be/hGMMDJAObLA"
             thumbnailURL="https://img.youtube.com/vi/hGMMDJAObLA/maxresdefault.jpg"
-        />
+        /> */}
         <MusicComponent 
             name="Mio Honda murder ASMR"
             link="https://youtu.be/e3oSIlUbGwA"
@@ -65,29 +65,29 @@ const Music = props => {
             link="https://youtu.be/MUv-eFAOV9M"
             thumbnailURL="https://img.youtube.com/vi/MUv-eFAOV9M/mqdefault.jpg"
         />
-    </div>
-    {/*row 2*/}
-    <div className="row-padding row">
         <MusicComponent 
             name="Katy Perry - Plastic Bag"
             link="https://youtu.be/QqKL0LTUpi8"
             thumbnailURL="https://img.youtube.com/vi/QqKL0LTUpi8/mqdefault.jpg"
         />
         <MusicComponent 
-            name="somebody toucha my spaghet (trap remix)"
-            link="https://youtu.be/hJ1nb0TvlZo"
-            thumbnailURL="https://img.youtube.com/vi/hJ1nb0TvlZo/mqdefault.jpg"
-        />
-        <MusicComponent 
-            name="Humble but i got a hand on my gat"
-            link="https://youtu.be/V1sZAGIooqM"
-            thumbnailURL="https://img.youtube.com/vi/V1sZAGIooqM/mqdefault.jpg"
-        />
-        <MusicComponent 
             name="if catullus was a cringy rapper"
             link="https://youtu.be/WWTqLbZ0hs8"
             thumbnailURL="https://img.youtube.com/vi/WWTqLbZ0hs8/mqdefault.jpg"
         />
+    </div>
+    {/*row 2*/}
+    <div className="row-padding row">
+        {/* <MusicComponent 
+            name="somebody toucha my spaghet (trap remix)"
+            link="https://youtu.be/hJ1nb0TvlZo"
+            thumbnailURL="https://img.youtube.com/vi/hJ1nb0TvlZo/mqdefault.jpg"
+        /> */}
+        {/* <MusicComponent 
+            name="Humble but i got a hand on my gat"
+            link="https://youtu.be/V1sZAGIooqM"
+            thumbnailURL="https://img.youtube.com/vi/V1sZAGIooqM/mqdefault.jpg"
+        /> */}
     </div>
     </>
     );

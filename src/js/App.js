@@ -22,7 +22,6 @@ const themeSet = (toggled) => {
   document.getElementById('mode').innerHTML = toggled ? '阳' : '阴';
 }
 const themeToggle = () => {
-  console.log("HERE");
   themeSet(document.getElementById('style-light').disabled);
 }
 

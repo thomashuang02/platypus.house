@@ -5,10 +5,11 @@ import '../css/Socials.css';
 const Socials = props => {
     return (
         <div className="container socials-container" id="socials">
+            <p>note: my resume really needs an update. coming soon</p>
             <table className="buttons">
             <tbody>
               <tr>
-                <SocialComponent 
+                {/* <SocialComponent 
                     name="LinkedIn"
                     faClass="fa-linkedin"
                     link="https://www.linkedin.com/in/thomashuang02/"
@@ -28,7 +29,7 @@ const Socials = props => {
                     faClass="fa-envelope"
                     link="#contact"
                     stayOnPage={true}
-                />
+                /> */}
                 <SocialComponent 
                     name="Resume"
                     faClass="fa-file-text"

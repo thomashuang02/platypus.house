@@ -45,10 +45,7 @@ const Projects = props => {
     return (
         <>
         <div className="container" id="projects">
-            <SectionHeader name="projects" />
-            <p>
-                learning by doing.
-            </p>
+            <SectionHeader name="coding projects" />
         </div>
 
         {/*row 1*/}
@@ -60,74 +57,63 @@ const Projects = props => {
                 githubLink="https://github.com/thomashuang02/nlp-movie-genre-classification"
             >
                 <p>
-                    NLP team project with <a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/CozyHome" target='_blank' rel="noreferrer">Daniel Cucuzza</a> and <a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/zer0key123" target='_blank' rel="noreferrer">Illia Borzov</a>.
-                </p>
-                <p>
-                    I built and refined our engineering pipeline, and was also heavily involved in research, evaluation, and documentation. 
+                    NLP team research project with <a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/CozyHome" target='_blank' rel="noreferrer">Daniel Cucuzza</a> and <a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/zer0key123" target='_blank' rel="noreferrer">Illia Borzov</a>.
                     Code and paper with findings on Github.
                 </p>
             </ProjectComponent>
             <ProjectComponent 
                 videoSrc={wishAnimation}
                 name="gachasim"
-                date="On Hold"
+                date="February 2022"
                 githubLink="https://github.com/thomashuang02/gachasim"
             >
                 <p>
-                    A gacha simulator for (eventually) various popular gacha games; all the dopamine without any of the 
-                    grinding or whaling.
-                </p>
-                <p>
-                    Good headway on one-to-one recreation of the Genshin Impact wish menu, lacking only rolling logic and wish summary displays. Project on hold as my interest in the game has waned.
+                    I had a Genshin Impact phase and tried to recreate the game's wish menu, including all the animations. 
+                    Got pretty close to one-to-one (lacking only rolling logic and wish result displays), but then I stopped playing the game :^)
                 </p>
             </ProjectComponent>
             <ProjectComponent 
                 imageURL="./images/projects/all-in-poker.png"
                 name="All-In Poker"
                 date="December 2021"
-                deployedLink="https://allinpoker.app/"
+                // deployedLink="https://allinpoker.app/"
                 githubLink="https://github.com/software-students-fall2021/project-setup-beizhang-discrete"
             >
                 <p>
-                    A poker web app for a Scrum team project. 
+                    A poker web app for a team project. 
                     Built on the MERN stack, 
                     CI using CircleCI,
                     deployed on Digital Ocean.
                 </p>
                 <p>
-                    Credit to my teammates: 
+                    My teammates: 
                     {' '}<a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/B-Pasteelnick" target='_blank' rel="noreferrer">Ben Pasteelnick</a>,
                     {' '}<a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/EricXiaoYang" target='_blank' rel="noreferrer">Eric Yang</a>,
                     {' '}<a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/oooscarrr" target='_blank' rel="noreferrer">Oscar Xue</a>, and
                     {' '}<a className="hover-teal hover-no-underline pulsing-teal" href="https://github.com/owen-boop" target='_blank' rel="noreferrer">Owen Wahlgren</a>.
                 </p>
             </ProjectComponent>
-        </div>
-        {/*row 2*/}
-        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/projects/showstop.png"
                 name="Showstop"
                 date="November 2021"
-                deployedLink="https://showstop.herokuapp.com/"
+                // deployedLink="https://showstop.herokuapp.com/"
                 githubLink="https://github.com/thomashuang02/Showstop"
             >
                 <p>
-                    A film- and TV-cataloging web app for users to manage a list of the various shows 
-                    and movies they've watched, along with details like watching progress, ratings, and notes.
-                    Includes various sorting and filtering functionalities.
+                    A web app for users to catalogue the films and TV shows they watch, along with details like episode progress, ratings, and notes.
                 </p>
             </ProjectComponent>
+        </div>
+        {/*row 2*/}
+        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/patapuspfp.png"
-                name="personal website"
+                name="platypus.house"
                 date={`last updated ${lastUpdated}`}
                 githubLink="https://github.com/thomashuang02/website"
             >
-                <p>
-                    Pushing my previously-zero front-end limits. 
-                    Personal info, project showcases, a does-the-job contact form. Static HTML generated using React.
-                </p>
+                <p>This page!</p>
                 <p>Logo artist:{' '}
                     <span className='ig-link pulsing-pink'>
                         <i className="fa fa-instagram ig-logo"></i>{' '}
@@ -142,13 +128,9 @@ const Projects = props => {
                 githubLink="https://github.com/thomashuang02/LSTM-Autoencoder-for-Time-Series-Anomaly-Detection/blob/main/lstm_autoencoder.ipynb"
             >
                 <p>
-                    Product of my DataProphet internship. Multivariate LSTM autoencoder using Keras; 
-                    attempts to reconstruct compressed time-series input to visualize and suggest potential anomalies.
+                    Built a multivariate LSTM autoencoder that reconstructs compressed time-series data to visualize patterns and suggest potential anomalies in industrial manufacturing machines 🤓
                 </p>
             </ProjectComponent>
-        </div>
-        {/*row 3*/}
-        <div className="row-padding row">
             <ProjectComponent 
                 imageURL="./images/projects/global-vaccination.png"
                 name="forecasting covid-19 vaccination rates"
@@ -157,26 +139,8 @@ const Projects = props => {
             >
                 <p>
                     Examined vaccination statistics globally and regionally;
-                    tried linear regression vs FBProphet for predicting when 
+                    compared various models for predicting when 
                     a given country would reach a percentage threshold for people vaccinated.
-                </p>
-            </ProjectComponent>
-            <ProjectComponent 
-                imageURL="./images/projects/moon-and-stars.png"
-                name="♫ TO THE STARS"
-                date="April 2021"
-                youtubeLink="https://youtu.be/1lV7kZ0kK4I"
-            >
-                <p>
-                    A song about a lonely whale and the solace she finds in the night sky. 
-                    Shoutouts to various Madeon samples, FL Studio 12, and my Google Doc full of lyric drafts.
-                </p> 
-                <p>
-                    Art and animation by{' '}
-                    <span className='ig-link pulsing-pink'>
-                        <i className="fa fa-instagram ig-logo"></i>{' '}
-                        <a className="hover-pink hover-no-underline" href='https://www.instagram.com/mangonino/?hl=en' target='_blank' rel="noreferrer">mangonino</a>
-                    </span>
                 </p>
             </ProjectComponent>
             <ProjectComponent 
@@ -187,8 +151,7 @@ const Projects = props => {
             >
                 <p>
                     Designed a university course registration system in Java for 
-                    creation, deletion, and manipulation of course and user-login information. 
-                    Supports serialization to save and reload data.
+                    creation, deletion, and manipulation of course and user-login information.
                 </p> 
             </ProjectComponent>
         </div>
