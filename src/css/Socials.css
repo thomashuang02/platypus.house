@@ -1,0 +1,32 @@
+#socials {
+    margin-top: 15px;
+}
+.fa-linkedin {
+    color:#0e76a8;
+}
+.fa-github {
+    color:#211F1F;
+}
+.fa-youtube-play {
+    color:#c4302b;
+}
+.fa-envelope {
+    color:#000000;
+}
+.fa-file-text {
+    color:#000000;
+}
+.socials-container {
+    max-width: 800px;
+}
+.socialButton {
+    font-size: 16px;
+    background-color: #b6b6b660 !important;
+    transition: 0.2s ease;
+    height: 50px;
+    max-width: 200px;
+}
+.socialButton:hover {
+    background-color: #b6b6b696 !important;
+    transform: scale(103%);
+}

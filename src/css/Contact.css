@@ -1,0 +1,113 @@
+#contact {
+    margin: 40px auto 100px auto;
+}
+#contact-form input {
+    border-radius: 3px; overflow: hidden;
+}
+#contact-form textarea {
+    border-radius: 3px; resize: vertical;
+}
+#contact input, #contact textarea {
+    background: transparent;
+    color: var(--text-color);
+}
+.sendMessageButton:hover {
+    background-color:#74f8d9 !important;
+    color: black !important;
+}
+
+/* Customize the label (the container) */
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: #b6b6b660;
+    border: 1px solid #ccc;
+}
+.checkbox-label {
+    line-height: 22px;
+}
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #d6d6d660;
+}
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #52d1b3;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.loader {
+    visibility: hidden;
+    display: inline-block;
+    position: relative;
+    right: 62px;
+    top: 8px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #52d1b3;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 1.5s linear infinite;
+    cursor: pointer;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#submit-contact {
+    display: inline-block;
+}
+#submit-contact::after {
+    content: "send it!";
+}
+.loading .loader {
+    visibility: visible;
+}
+.loading #submit-contact::after {
+    visibility: hidden;
+}
