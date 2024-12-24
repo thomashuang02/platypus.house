@@ -45,7 +45,7 @@ const Projects = props => {
     return (
         <>
         <div className="container" id="projects">
-            <SectionHeader name="coding projects" />
+            <SectionHeader name="projects" />
         </div>
 
         {/*row 1*/}
